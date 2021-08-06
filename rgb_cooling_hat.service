@@ -1,0 +1,19 @@
+[Unit]
+Descrition=rgb cooling hat
+
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/
+PermissionsStartOnly=True
+
+Type=simple
+PIDFile=/home/pi/rgb_cooling_hat.pid
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+ExecStart=/usr/local/bin/rgb_cooling_hat
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
