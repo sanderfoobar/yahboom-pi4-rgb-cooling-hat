@@ -179,7 +179,7 @@ int main(void) {
     }
 
     if (raspi_version == 4) {
-      if (temp >= 55) {
+      if (temp >= 50) {
         if (fan_state != 1) {
           wiringPiI2CWriteReg8(fd_i2c, 0x08, 0x01);
           fan_state = 1;

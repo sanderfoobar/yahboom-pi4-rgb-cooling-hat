@@ -1,6 +1,6 @@
 ## Yahboom Raspberry Pi RGB Cooling HAT
 
-This small C script will turn on the fan when temp goes above 45C and will 
+This small C script will turn on the fan when temp goes above 50C and will 
 show some text on the OLED display.
 
 ### install
