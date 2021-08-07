@@ -22,6 +22,7 @@ Auto-start executable at raspberry pi startup:
 
 ```
 sudo cp rgb_cooling_hat.service /etc/systemd/system/rgb_cooling_hat.service
+sudo systemctl daemon-reload
 sudo systemctl enable rgb_cooling_hat
 ```
 
