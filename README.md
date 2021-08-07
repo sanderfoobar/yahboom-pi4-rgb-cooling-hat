@@ -8,7 +8,11 @@ show some text on the OLED display. I disabled the RGB.
 ### install
 
 ```
-apt install -y wiringpi cmake
+sudo apt install -y wiringpi cmake build-essential gcc
+
+git clone https://github.com/sanderfoobar/yahboom-pi4-rgb-cooling-hat.git
+cd yahboom-pi4-rgb-cooling-hat
+
 cmake -B build .
 make -Cbuild -j4
 sudo make -Cbuild install
