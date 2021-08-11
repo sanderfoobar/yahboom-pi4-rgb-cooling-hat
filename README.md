@@ -1,13 +1,21 @@
 ## Yahboom Raspberry Pi RGB Cooling HAT
 
-![https://i.imgur.com/dq8DsVf.png](https://i.imgur.com/dq8DsVf.png)
+![https://i.imgur.com/taz0tA1.jpg](https://i.imgur.com/taz0tA1.jpg)
 
 This small C script will turn on the fan when temp goes above 50C and will 
 show some text on the OLED display. I disabled the RGB.
 
 ### install
 
+make sure you have this line in `/boot/config.txt`:
+
+```text
+dtparam=i2c_arm=on
 ```
+
+download & compile this program:
+
+```text
 sudo apt install -y wiringpi cmake build-essential gcc
 
 git clone https://github.com/sanderfoobar/yahboom-pi4-rgb-cooling-hat.git
