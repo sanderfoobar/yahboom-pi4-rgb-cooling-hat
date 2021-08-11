@@ -8,7 +8,7 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 message(STATUS "")
 
-add_executable(rgb_cooling_hat main.c lib/ssd1306_i2c.c lib/ssd1306_i2c.h lib/oled_fonts.h wiringPi.h)
+add_executable(rgb_cooling_hat main.c lib/ssd1306_i2c.c lib/ssd1306_i2c.h lib/oled_fonts.h)
 
 target_link_libraries(rgb_cooling_hat PRIVATE -lwiringPi)
 target_include_directories(rgb_cooling_hat PRIVATE lib)
